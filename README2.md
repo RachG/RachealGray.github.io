@@ -1,4 +1,4 @@
-</ul<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang = "en">
 <head>
@@ -8,7 +8,7 @@
   <body>
     <p>
    <h1> Welcome to Fur Babies-R-Us </h1>
-   <img src= "Tech Kitty.jpg">
+   <img src = "Tech Kitty.jpg">
 
    <h2> About Fur Babies-R-Us </h2>
 
