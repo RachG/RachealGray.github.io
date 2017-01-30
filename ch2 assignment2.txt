@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang = "en">
 <head>
@@ -25,7 +25,7 @@
            <li> Playground Toys </li>
            <li> Leashes, and Harnesses </li>
            <li> Pet Beds </li>
-       </ul>
+       
        </p>
 
 </body>
