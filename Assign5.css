@@ -1,0 +1,52 @@
+/*index page*/
+
+body {
+    background-color: #d9d9d9;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font: italic bold Calibri, sans-serif;
+}
+
+p {
+    font-family: "Calibri", Calibri, sans-serif;
+}
+
+h3 {
+    font-family: "Calibri", Calibri, sans-serif;
+}
+
+a:link {
+    color: #cc66ff
+}
+
+a:hover {
+    color: #ff0066
+}
+
+a:active {
+    color: #77ff33
+}
+
+a:visted {
+    color: #ff5500
+}
+
+
+/*Pet Food*/
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+table,
+th,
+td {
+    border: 3px solid black;
+}
