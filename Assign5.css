@@ -40,28 +40,42 @@ a:visted {
 
 h1 {
     color: white;
+    font-family: "Calibri", Calibri, sans-serif;
 }
 
 h2 {
     color: white;
+    font-family: "Calibri", Calibri, sans-serif;
 }
 
 table {
-    border-collapse: collapse
+    border-collapse: collapse;
+    font-family: "Calibri", Calibri, sans-serif;
 }
 
 table,
 th,
 td {
     border: 3px solid whitesmoke;
+    font-family: "Calibri", Calibri, sans-serif;
 }
 
 th {
     background-color: #4d004d;
     color: white;
+    font-family: "Calibri", Calibri, sans-serif;
 }
 
 td,
 tr {
     color: white;
+    font-family: "Calibri", Calibri, sans-serif;
+}
+
+
+/*Contact Us*/
+
+p {
+    color: white;
+    font-family: "Calibri", Calibri, sans-serif;
 }
