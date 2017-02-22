@@ -1,7 +1,7 @@
 /*index page*/
 
 body {
-    background-color: #d9d9d9;
+    background-color: #000000;
 }
 
 h1 {
@@ -48,5 +48,5 @@ h2 {
 table,
 th,
 td {
-    border: 3px solid black;
+    border: 3px solid whitesmoke;
 }
