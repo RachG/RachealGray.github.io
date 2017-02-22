@@ -12,6 +12,7 @@ h1 {
 
 p {
     font-family: "Calibri", Calibri, sans-serif;
+    color: white;
 }
 
 h3 {
@@ -74,8 +75,3 @@ tr {
 
 
 /*Contact Us*/
-
-p {
-    color: white;
-    font-family: "Calibri", Calibri, sans-serif;
-}
