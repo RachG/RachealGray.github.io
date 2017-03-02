@@ -1,22 +1,22 @@
 /*index page*/
 
 body {
-    background-color: #000000;
+    background-image: url ("http://www.graphicpanic.com/images/light-blue-background.jpg");
 }
 
 h1 {
-    color: white;
+    color: black;
     text-align: center;
     font: italic bold Calibri, sans-serif;
 }
 
 p {
     font-family: "Calibri", Calibri, sans-serif;
-    color: white;
+    color: black;
 }
 
 h3 {
-    color: white;
+    color: black;
     font-family: "Calibri", Calibri, sans-serif;
 }
 
@@ -40,12 +40,12 @@ a:visted {
 /*Pet Food*/
 
 h1 {
-    color: white;
+    color: black;
     font-family: "Calibri", Calibri, sans-serif;
 }
 
 h2 {
-    color: white;
+    color: black;
     font-family: "Calibri", Calibri, sans-serif;
 }
 
@@ -57,21 +57,26 @@ table {
 table,
 th,
 td {
-    border: 3px solid whitesmoke;
+    border: 3px solid black;
     font-family: "Calibri", Calibri, sans-serif;
 }
 
 th {
-    background-color: #4d004d;
-    color: white;
+    background-color: mediumpurple;
+    color: black;
     font-family: "Calibri", Calibri, sans-serif;
 }
 
 td,
 tr {
-    color: white;
+    color: black;
     font-family: "Calibri", Calibri, sans-serif;
 }
 
 
 /*Contact Us*/
+
+p {
+    text-align: "center";
+    color: black;
+}
