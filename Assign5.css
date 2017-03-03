@@ -1,10 +1,8 @@
 /*index page*/
 
 body {
-    background-image:url("http://www.publicdomainpictures.net/pictures/130000/velka/turquoise-white-pattern-background.jpg");
-    background-repeat: repeat-x;
-    background-repeat: repeat-y;
-}
+    background-image:mediumturquoise;
+  }
 
 h1 {
     color: black;
