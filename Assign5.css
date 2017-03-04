@@ -29,7 +29,7 @@ p.rel
     padding:0;
     width: 150px;
     text-align:center;
-    border-style:2px solid #555;
+    border-style:solid #555;
     background-color:lightgray;
 }
 a:link {
