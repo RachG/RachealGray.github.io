@@ -1,10 +1,11 @@
 /*index page*/
 
 body {
-    background-color:mediumturquoise;
-  }
+    background-color: mediumturquoise;
+}
 
 h1 {
+    background-color: darkgray;
     color: black;
     text-align: center;
     font: italic bold Calibri, sans-serif;
@@ -19,19 +20,29 @@ h3 {
     color: black;
     font-family: "Calibri", Calibri, sans-serif;
 }
-p.rel
-{
-    position:relative;
-    top:0;
-    left:0;
-     list-style-type: circle;
-    margin:0;
-    padding:0;
-    width: 150px;
-    text-align:center;
-    border-style:solid #555;
-    background-color:lightgray;
+
+.header {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    list-style-type: circle;
+    width: 75%;
+    border-style: 2px solid black;
+    background-color: darkgray;
 }
+
+.links {
+    text-align: center;
+    background-color: #595959;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    padding-top: 50px;
+    max-width: 225px;
+}
+
 a:link {
     color: #cc66ff
 }
@@ -46,7 +57,7 @@ a:active {
 
 a:visted {
     color: #ff5500
-
+}
 
 
 /*Pet Food*/
