@@ -1,11 +1,11 @@
 /*index page*/
 
 body {
-    background-color: #b3ffff;
+    background-color: #66ccff;
 }
 
 h1 {
-    background-color: #ccccff;
+    background-color: #80ffff;
     color: black;
     text-align: center;
     font: italic bold Calibri, sans-serif;
@@ -21,6 +21,11 @@ p {
     width: 70%;
     left: 20%;
     top: 220px;
+}
+
+h2 {
+    color: black;
+    font-family: "Calibri", Calibri, sans-serif;
 }
 
 h3 {
@@ -40,7 +45,7 @@ h3 {
 
 .links {
     text-align: center;
-    background-color: #ccccff;
+    background-color: #80ffff;
     width: 15%;
     height: 100%;
     position: absolute;
@@ -52,14 +57,14 @@ h3 {
 
 a:link {
     color: white;
-    background-color: #000080;
+    background-color: lightgrey;
     padding: 5px 20px;
     text-align: center
 }
 
 a:hover {
     color: #ff0066;
-    background-color: #000080;
+    background-color: lightgrey;
     padding: 5px 20px;
     text-align: center
 }
@@ -70,7 +75,7 @@ a:active {
 
 a:visted {
     color: white;
-    background-color: #000080;
+    background-color: lightgrey;
     padding: 5px 20px;
     text-align: center
 }
