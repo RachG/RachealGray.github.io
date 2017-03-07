@@ -88,13 +88,6 @@ h2 {
     font-family: "Calibri", Calibri, sans-serif;
 }
 
-.main-table {
-    border-collapse: collapse;
-    font-family: "Calibri", Calibri, sans-serif;
-    width: 70%;
-    left: 20% top: 250px;
-}
-
 table,
 th,
 td {
