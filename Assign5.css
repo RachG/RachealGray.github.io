@@ -100,11 +100,22 @@ h2 {
     font-family: "Calibri", Calibri, sans-serif;
 }
 
+.tables {
+    position: absolute;
+    width: 70%;
+    left: 20%;
+    top: 250px;
+}
+
 table,
 th,
 td {
     border: 3px solid black;
     font-family: "Calibri", Calibri, sans-serif;
+}
+
+table {
+    width: 100%
 }
 
 th {
