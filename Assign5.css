@@ -102,7 +102,7 @@ h2 {
 
 .tables {
     position: absolute;
-    width: 70%;
+    width: 75%;
     left: 20%;
     top: 200px;
 }
@@ -115,7 +115,7 @@ td {
 }
 
 table {
-    width: 75%
+    width: 100%
 }
 
 th {
