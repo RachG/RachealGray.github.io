@@ -137,3 +137,10 @@ p {
     text-align: "center";
     color: black;
 }
+
+.contactme {
+    position: absolute;
+    width: 70%;
+    left: 20%;
+    top: 200px;
+}
