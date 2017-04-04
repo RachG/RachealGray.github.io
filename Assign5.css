@@ -144,3 +144,13 @@ p {
     left: 20%;
     top: 200px;
 }
+
+div.displayClock {
+    font-family: "Calibri", Calibri, sans-serif;
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+    width: 100%;
+    border: 1px solid gray;
+    text-align: center;
+}
