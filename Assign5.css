@@ -43,13 +43,14 @@ h3 {
     background-color: #ccccff;
 }
 
-footer {
+.footer {
     padding: .5em;
     color: white;
     background-color: gray;
     clear: left;
     text-align: center;
     width: inherit;
+    position: absolute;
 }
 
 div.container {

@@ -50,7 +50,7 @@ function startTime() {
     minutes = checkTime(minutes);
     second = checkTime(second);
 
-    document.getElementById("dateTime").innerHTML =
+    document.getElementById('txt').innerHTML =
         "Today is " + month + "/" + day + "/" + year +
         " and the time is " + hours + ":" + minutes + ":" + second;
     var t = setTimeout(startTime, 500);
