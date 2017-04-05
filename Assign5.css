@@ -52,6 +52,10 @@ footer {
     width: inherit;
 }
 
+div.container {
+    width: 100%;
+}
+
 .links {
     text-align: center;
     background-color: darkgrey;
