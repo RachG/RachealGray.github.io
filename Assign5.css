@@ -43,20 +43,6 @@ h3 {
     background-color: #ccccff;
 }
 
-.footer {
-    padding: .5em;
-    color: white;
-    background-color: gray;
-    clear: left;
-    text-align: center;
-    width: inherit;
-    position: absolute;
-}
-
-div.container {
-    width: 100%;
-}
-
 .links {
     text-align: center;
     background-color: darkgrey;
@@ -92,6 +78,15 @@ a:visted {
     background-color: lightgrey;
     padding: 5px 20px;
     text-align: center
+}
+
+.footer {
+    padding: .5em;
+    color: black;
+    background-color: gray;
+    clear: left;
+    text-align: center;
+    width: inherit;
 }
 
 .imgs {
