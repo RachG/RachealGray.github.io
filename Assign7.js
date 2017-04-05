@@ -50,14 +50,8 @@ function startTime() {
     minutes = checkTime(minutes);
     second = checkTime(second);
 
-    document.getElementById('txt').innerHTML =
+    document.getElementById('date').innerHTML =
         "Today is " + month + "/" + day + "/" + year +
         " and the time is " + hours + ":" + minutes + ":" + second;
     var t = setTimeout(startTime, 500);
-}
-
-function checkTime(i) {
-    if (i < 10) {
-        i = "0" + 1
-    }
 }
