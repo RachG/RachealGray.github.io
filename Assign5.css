@@ -81,6 +81,10 @@ a:visted {
 }
 
 .footer {
+    position: absolute;
+    width: 70%;
+    left: 20%;
+    top: 200px;
     padding: .5em;
     color: black;
     background-color: gray;
