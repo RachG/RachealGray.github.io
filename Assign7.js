@@ -1,15 +1,23 @@
-// JavaScript Date and Time 
+//JavaScript Day and Time 
 
-function renderTime() {
-    var mydate = newDate();
-    var year = mydate.getyear();
-    if (year < 1000) {
-        year += 1900
-        var day = mydate.getDay();
-        var month = mydate.getMonth();
-        var daym = mydate.getDate();
-        var dayarray = new Array("Sunday,", "Monday,", "Tuesday,", "Wednesday,", "Thursday,", "Friday,", "Saturday,", );
-        var montharray = new Array("January,", "February,", "March,", "April,", "May,", "Juny", "July,", "August,", "September,", "October,", "November,", "December,", );
-    }
+function startTime() {
+    var today = new Date();
+    var month = today.getMonth() + 1;
+    var day = today.getDate();
+    var year = today.getFullYear();
+    var hours = today.getHours();
+    var minutes = today.getMinutes();
+    var second = today.getSeconds();
+    minutes = checkTime(minutes);
+    second = checkTime(second);
 
+    document.getElementById('txt').innerHTML =
+        "Today is " + month + "/" + day + "/" + year +
+        " and the time is " + hours + ":" + minutes + ":" + second;
+    var t = setTimeout(startTime, 500);
 }
+
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + 1
+    }
