@@ -81,10 +81,11 @@ a:visted {
 }
 
 .dates {
-    position: absolute;
+    position: fixed;
     width: 70%;
     left: 20%;
-    top: 700px;
+    bottom: 0;
+    right: 0;
     padding: .5em;
     color: black;
     background-color: gray;
