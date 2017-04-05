@@ -38,11 +38,11 @@
             <img src="bunny.jpg " height="120 " />
     </div>
     <footer>
-        <h4>
-            <p style="text-align:center;"> Today's date: </p>
-        </h4>
-        <p id="txt" style="text-align:center;"></p>
-        <script src="Assign7.js"></script>
+        <p id="date"></p>
+        <script>
+            var d = new Date();
+            document.getElementById("date").innerHTML = "\tToday is: " + d.toDateString() + "   ";
+        </script>
 
         <p> Thank you for shopping at Fur Babies-R-Us!</p>
 
