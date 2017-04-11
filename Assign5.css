@@ -105,16 +105,6 @@ a:visted {
 
 /*Pet Food*/
 
-h1 {
-    color: black;
-    font-family: "Calibri", Calibri, sans-serif;
-}
-
-h2 {
-    color: black;
-    font-family: "Calibri", Calibri, sans-serif;
-}
-
 .tables {
     margin-left: auto;
     margin-right: auto;
@@ -128,8 +118,8 @@ h2 {
 table,
 th,
 td {
-    border: 3px solid black;
-    font-family: "Calibri", Calibri, sans-serif;
+    border: 1px solid black;
+    font-family: New Century Schoolbook, serif;
 }
 
 table {
@@ -142,16 +132,14 @@ table {
     border-radius: 12px;
 }
 
-th {
-    background-color: mediumpurple;
-    color: black;
-    font-family: "Calibri", Calibri, sans-serif;
-}
-
+th,
 td,
 tr {
+    background-color: lightskyblue;
     color: black;
-    font-family: "Calibri", Calibri, sans-serif;
+    font-family: New Century Schoolbook, serif;
+    padding: 5px;
+    text-align: left;
 }
 
 
