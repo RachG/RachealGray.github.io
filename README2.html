@@ -9,85 +9,70 @@
     <title> Fur Babies-R-Us </title>
 </head>
 
-<head>
-    <script>
-        function myFunction() {
-            document.getElementById("demo").innerHTML = "You get 20% Off!";
-        }
-    </script>
-</head>
 
-<body>
 
-    <p>When you click "Welcome", a function will be called.</p>
-    <p>The function will display a message.</p>
+<body onload="startTime()">
+    <div class="header">
+        <h1>
+            <p style="text-align:center"> Welcome to Fur Babies-R-Us </p>
+            <p style="text-align:center;"> <img src="Cartoon-Dog.jpg" alt="dog logo" style="height:100px; width:100px;"> </p>
+        </h1>
+    </div>
 
-    <button onclick="myFunction()">Try it</button>
 
-    <p id="demo"></p>
+    <p>
+        <div class="info">
+            <h2 style="text-align:center"> About Fur Babies-R-Us </h2>
 
-    <body onload="startTime()">
-        <div class="header">
-            <h1>
-                <p style="text-align:center"> Welcome to Fur Babies-R-Us </p>
-                <p style="text-align:center;"> <img src="Cartoon-Dog.jpg" alt="dog logo" style="height:100px; width:100px;"> </p>
-            </h1>
+            <h3 style="text-align:center"> Fur Babies-R-Us is an awesome place to come for all your pets needs.</h3>
+
+            <ul style="text-align:center">
+                We have a great selection of healthy foods for your animals. <br> If we don't have what you are looking for you can make a suggestion in the contact us page.<br/> We also carry a great variety of pet beds, cages, and aquariums. </br>
+                As always, feel free to contact us with any questions or concerns!
+
+            </ul>
         </div>
+    </p>
+    <div class="imgs">
+        <p style="text-align:center">
 
-
-        <p>
-            <div class="info">
-                <h2 style="text-align:center"> About Fur Babies-R-Us </h2>
-
-                <h3 style="text-align:center"> Fur Babies-R-Us is an awesome place to come for all your pets needs.</h3>
-
-                <ul style="text-align:center">
-                    We have a great selection of healthy foods for your animals. <br> If we don't have what you are looking for you can make a suggestion in the contact us page.<br/> We also carry a great variety of pet beds, cages, and aquariums. </br>
-                    As always, feel free to contact us with any questions or concerns!
-
-                </ul>
-            </div>
-        </p>
-        <div class="imgs">
-            <p style="text-align:center">
-
-                <img src="https://s-media-cache-ak0.pinimg.com/736x/27/cf/cd/27cfcd2fefc4db6d3de473e3f7c7f00b.jpg " height="120 " />
-                <img src="bunny.jpg " height="120 " />
-        </div>
-        <div class="links ">
-            <div class="dropdown">
-                <br>
-                <button class="dropbtn">Products</button>
-                <div class="dropdown-content">
-                    <a href="https://rachealgray.github.io/Assign3.html "> Pet Food</a>
-                    <a href="https://rachealgray.github.io/Assign3Page2.html "> Pet Furniture</a>
-
-                </div>
-            </div>
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/27/cf/cd/27cfcd2fefc4db6d3de473e3f7c7f00b.jpg " height="120 " />
+            <img src="bunny.jpg " height="120 " />
+    </div>
+    <div class="links ">
+        <div class="dropdown">
             <br>
-            <br>
+            <button class="dropbtn">Products</button>
+            <div class="dropdown-content">
+                <a href="https://rachealgray.github.io/Assign3.html "> Pet Food</a>
+                <a href="https://rachealgray.github.io/Assign3Page2.html "> Pet Furniture</a>
 
-            <a href="https://RachealGray.github.io/ContactUS.html "> Contact Us</a>
+            </div>
         </div>
+        <br>
+        <br>
 
-        </p>
+        <a href="https://RachealGray.github.io/ContactUS.html "> Contact Us</a>
+    </div>
 
-
-        <div class="dates" style="font-size:12px">
-            <footer>
-                <p id="date"></p>
-                <script>
-                    var d = new Date();
-                    document.getElementById("date").innerHTML = "\tToday is: " + d.toDateString() + "   ";
-                </script>
-
-                <p> Thank you for shopping at Fur Babies-R-Us!</p>
-
-            </footer>
+    </p>
 
 
+    <div class="dates" style="font-size:12px">
+        <footer>
+            <p id="date"></p>
+            <script>
+                var d = new Date();
+                document.getElementById("date").innerHTML = "\tToday is: " + d.toDateString() + "   ";
+            </script>
+
+            <p> Thank you for shopping at Fur Babies-R-Us!</p>
+
+        </footer>
 
 
-    </body>
+
+
+</body>
 
 </html>
