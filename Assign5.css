@@ -144,8 +144,11 @@ p {
     top: 200px;
 }
 
+
+/* Dropdown Button */
+
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: lightgrey;
     color: white;
     padding: 16px;
     font-size: 16px;
