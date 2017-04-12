@@ -33,7 +33,7 @@ h3 {
     border-style: 2px solid black;
     background-color: #ccccff;
     text-align: center;
-    width: inherit;
+    width: auto;
     position: relative;
     z-index: 100;
 }
