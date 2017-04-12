@@ -44,14 +44,7 @@
                 <input type="submit" value="Submit" <form name="myForm" action="/action_page_post.php" onsubmit="return validateForm()" method="post">
 
         </form>
-        <footer>
-            <p> Thank you for shopping at Fur Babies-R-Us!</p>
-            <div id="txt"></div>
-        </footer>
-
         </p>
-
-
     </div>
     <p>
         <div class="links">
@@ -60,6 +53,17 @@
             <a href="https://rachealgray.github.io/Assign3Page2.html"> Pet Furniture</a>
         </div>
     </p>
+    <div class="dates" style="font-size:12px">
+        <footer>
+            <p id="date"></p>
+            <script>
+                var d = new Date();
+                document.getElementById("date").innerHTML = "\tToday is: " + d.toDateString() + "   ";
+            </script>
+
+            <p> Thank you for shopping at Fur Babies-R-Us!</p>
+
+        </footer>
 </body>
 
 </html>

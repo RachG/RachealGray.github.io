@@ -81,10 +81,17 @@
         <a href="https://rachealgray.github.io/Assign3.html"> Pet Food</a> <br><br>
         <a href="https://RachealGray.github.io/ContactUS.html"> Contact Us</a>
     </div>
-    <footer>
-        <p> Thank you for shopping at Fur Babies-R-Us!</p>
-        <div id="txt"></div>
-    </footer>
+    <div class="dates" style="font-size:12px">
+        <footer>
+            <p id="date"></p>
+            <script>
+                var d = new Date();
+                document.getElementById("date").innerHTML = "\tToday is: " + d.toDateString() + "   ";
+            </script>
+
+            <p> Thank you for shopping at Fur Babies-R-Us!</p>
+
+        </footer>
 </body>
 
 </html>
