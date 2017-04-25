@@ -31,7 +31,9 @@
                 As always, feel free to contact us with any questions or concerns!
 
             </ul>
+
         </div>
+
     </p>
     <div class="imgs">
         <p style="text-align:center">
@@ -39,6 +41,82 @@
             <img src="https://s-media-cache-ak0.pinimg.com/736x/27/cf/cd/27cfcd2fefc4db6d3de473e3f7c7f00b.jpg " height="120 " />
             <img src="bunny.jpg " height="120 " />
     </div>
+    <br>
+
+    <p style="text-align:center"></p>
+
+    <br/>
+    <br/>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="https://images.hayneedle.com/mgen/dynimage.ms?w=960&h=250&img=master:WMI0046.jpg&posy=-125" style="width:50%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="petsupplies.jpg" style="width:50%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="http://www.petstogo.net/wp-content/uploads/2014/01/elk-grove-laguna-pet-food.jpg" style="width:50%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="http://1uwbp23mwf822srkhltidugm.wpengine.netdna-cdn.com/wp-content/blogs.dir/201/files/2016/05/10_lowest-price-pet-supply-store-las-vegas_20160513.jpg" style="width:50%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
     <div class="links ">
         <div class="dropdown">
             <br>
