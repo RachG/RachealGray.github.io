@@ -43,7 +43,7 @@ function GameStarted() {
         document.getElementById("message").style.visibility = "hidden";
         document.getElementById("startButton").style.backgroundImage = "url(https://avatars3.githubusercontent.com/u/2000909?v=3&s=200)";
         document.getElementById("pic1img").src = "pic1.jpg";
-        document.getElementById("pic2img").src = "pic2.jpg";
+        document.getElementById("pic2img").src = "pic2.png";
         document.getElementById("pic3img").src = "pic3.jpg";
 
 
@@ -116,7 +116,7 @@ function MovePic() {
         document.getElementById("message").style.visibility = "visible";
 
         document.getElementById("pic1img").src = "pic1.jpg";
-        document.getElementById("pic2img").src = "pic2.jpg";
+        document.getElementById("pic2img").src = "pic2.png";
         document.getElementById("pic3img").src = "pic3.jpg";
 
         var winner = Math.max(pic1Left, pic2Left, pic3Left);
