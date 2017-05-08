@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
+<head>
+    <meta charset="urf-8">
+    <link rel="stylesheet" type="text/css" href=Race.css>
+    <title>Race to the Throne</title>
+    <meta name="description" content="HTML5 Template">
+
+</html>
+
+<head>
+    <style>
+        body {
+            background-image: url("https://www.flickeringmyth.com/wp-content/uploads/2017/05/game-of-thrones-the-iron-throne.jpg");
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+    </style>
+</head>
+
+<body onload="DynamicSizes()">
+    <div class="lay" id="lay1">
+        <div class="lay2" id="lay2">
+            <div class="lay3" id="lay3">
+                <div class="title">
+                    Race to the Throne
+                </div>
+                < <div class="back">
+                    <a onclick="Reset()" id="message" class="message">Click Red Light to Begin Race!</a>
+                    <div class="golight">
+                        <a id="startButton" onclick="GameStarted()" class="lightButton"></a>
+                    </div>
+                    <div id="pic1" class="pic"><img id="pic1img" class="back" src="pic1.jpg" style="width: 100px; height: 100px; " /></div>
+                    <div id="pic2" class="pic"><img id="pic2img" class="back" src="pic2.jpg" style="width: 100px; height: 100px; " /></div>
+                    <div id="pic3" class="pic"><img id="pic3img" class="back" src="pic3.jpg" style="width: 100px; height: 100px; " /></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="RaceScript.js"></script>
+</body>
+
+</html>
