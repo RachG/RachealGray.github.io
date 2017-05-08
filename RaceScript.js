@@ -7,11 +7,11 @@ var pic1Amt = 0;
 var pic2Amt = 0;
 var pic3Amt = 0;
 var rand = 0;
-var speed = window.innerWidth / 25;
-var finish = window.innerWidth - 110;
-var accel = 20;
-var buffer = 2;
-var pics = document.getElementsByClassName("pic");
+var speed = window.innerWidth / 40;
+var finish = window.innerWidth - 100;
+var accel = 10;
+var buffer = 0;
+var pic = document.getElementsByClassName("pic");
 var picImgs = document.getElementsByClassName("picImg");
 
 function DynamicSizes() {
@@ -26,12 +26,13 @@ function DynamicSizes() {
 
 function GameStarted() {
     if (!running && reset) {
-        speed = window.innerWidth / 25;
-        finish = window.innerWidth - 110;
+        speed = window.innerWidth / 50;
+        finish = window.innerWidth - 100;
 
         pic1Left = 0;
         pic2Left = 0;
         pic3Left = 0;
+
         picAmt = 0;
         pic2Amt = 0;
         pic3Amt = 0;
@@ -58,7 +59,31 @@ function Reset() {
         for (i = 0; i < pic.length; i++) {
             pic[i].style.left = "0%";
         }
+        document.getElementById("pic1").classList.remove("back");
+        document.getElementById("pic2").classList.remove("back");
+        document.getElementById("pic3").classList.remove("back");
 
+
+
+
+
+        back1left = 0;
+        back2left = 0;
+        back3left = 0;
+
+        back1mult = 30;
+        back2mult = 42;
+        back3mult = 54;
+
+        back1wid = window.innerWidth + 100;
+        back2wid = window.innerWidth + 100;
+        back3wid = window.innerWidth + 100;
+
+        interval = 0;
+
+        for (i = 0; i < backgrounds.length; i++) {
+            backgrounds[i].style.left = "0px";
+        }
         document.getElementById("message").style.visibility = "hidden";
     }
 }
@@ -67,7 +92,7 @@ function Reset() {
 function loop() {
     if (running) {
         setTimeout(function() {
-            MovePics();
+            MovePic();
             speed += accel;
             rand = 500;
             loop();

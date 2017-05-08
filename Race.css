@@ -1,6 +1,6 @@
 .lay {
     position: fixed;
-    background-color: black;
+    background-image: url("https://www.flickeringmyth.com/wp-content/uploads/2017/05/game-of-thrones-the-iron-throne.jpg");
     -webkit-animation: 300s scroll infinite linear;
     -moz-animation: 300s scroll infinite linear;
     -o-animation: 300s scroll infinite linear;
