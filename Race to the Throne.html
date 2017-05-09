@@ -5,7 +5,7 @@
 <head>
     <meta charset="urf-8">
     <link rel="stylesheet" type="text/css" href=Race.css>
-    <title>Race to the Throne</title>
+    <title>Race to the Iron Throne</title>
     <meta name="description" content="HTML5 Template">
 
 </html>
@@ -13,9 +13,8 @@
 <head>
     <style>
         body {
-            background-image: url("https://www.flickeringmyth.com/wp-content/uploads/2017/05/game-of-thrones-the-iron-throne.jpg");
-            background-repeat: no-repeat;
-            background-position: center top;
+            background-image: url("http://3g28wn33sno63ljjq514qr87.wpengine.netdna-cdn.com/wp-content/uploads/2015/12/Iron-Throne.jpg");
+            background-size: cover;
         }
     </style>
 </head>
@@ -25,21 +24,27 @@
         <div class="lay2" id="lay2">
             <div class="lay3" id="lay3">
                 <div class="title">
-                    Race to the Throne
+                    <h1> Race to the Iron Throne </h1>
                 </div>
-                < <div class="back">
-                    <a onclick="Reset()" id="message" class="message">Click Red Light to Begin Race!</a>
+                <div class="back">
+                    <a onclick="Reset()" id="message" class="message">Click the Red Light to Begin Race!</a>
                     <div class="greenLight">
                         <a id="startButton" onclick="GameStarted()" class="lightButton"></a>
                     </div>
-                    <div id="pic1" class="pic"><img id="pic1img" class="back" src="pic1.jpg" style="width: 100px; height: 100px; " /></div>
-                    <div id="pic2" class="pic"><img id="pic2img" class="back" src="pic2.png" style="width: 100px; height: 100px; " /></div>
-                    <div id="pic3" class="pic"><img id="pic3img" class="back" src="pic3.jpg" style="width: 100px; height: 100px; " /></div>
-            </div>
-        </div>
-    </div>
+                    <div id="pic1" class="pic"><img id="pic1img" class="transition" src="pic1.jpg" style="width: 125px; height: 125px; " /></div>
+                    <div id="pic2" class="pic"><img id="pic2img" class="transition" src="pic2.png" style="width: 125px; height: 125px; " /></div>
+                    <div id="pic3" class="pic"><img id="pic3img" class="transition" src="pic3.jpg" style="width: 125px; height: 125px; " /></div>
+                </div>
+                <div class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> WARNING: I Only Fight for The Stark's!.
+                </div>
 
-    <script src="RaceScript.js"></script>
+            </div>
+
+
+        </div>
+
+        <script src="RaceScript.js"></script>
 </body>
 
 </html>

@@ -9,8 +9,8 @@ var pic3Amt = 0;
 var rand = 0;
 var speed = window.innerWidth / 20;
 var finish = window.innerWidth - 100;
-var accel = 25;
-var buffer = 2;
+var accel = 50;
+var buffer = 3;
 var pics = document.getElementsByClassName("pic");
 var picImgs = document.getElementsByClassName("picImg");
 
@@ -33,7 +33,7 @@ function GameStarted() {
         pic2Left = 0;
         pic3Left = 0;
 
-        picAmt = 0;
+        pic1Amt = 0;
         pic2Amt = 0;
         pic3Amt = 0;
         rand = 0;
@@ -59,6 +59,7 @@ function Reset() {
         for (i = 0; i < pic.length; i++) {
             pics[i].style.left = "0%";
         }
+
 
         document.getElementById("message").style.visibility = "hidden";
     }
@@ -86,7 +87,7 @@ function MovePics() {
         pic1Left += amt;
         pic1Amt = amt;
         document.getElementById("pic1").style.left = pic1Left.toString() + "px";
-        document.getElementById("pic1").style.right = (document.getElementById("pic1").style.right - amt).toString() + "px";
+        document.getElementById("pic1").style.right = (document.getElementById("pic1").style.right, amt).toString() + rand + "px";
 
         var amt = Math.round(Math.random() * speed + buffer);
         if (amt < pic2Amt) {
@@ -95,16 +96,16 @@ function MovePics() {
         pic2Left += amt;
         pic2Amt = amt;
         document.getElementById("pic2").style.left = pic2Left.toString() + "px";
-        document.getElementById("pic2").style.right = (document.getElementById("pic2").style.right - amt).toString() + "px";
+        document.getElementById("pic2").style.right = (document.getElementById("pic2").style.right, amt).toString() + rand + "px";
 
         var amt = Math.round(Math.random() * speed + buffer);
         if (amt < pic3Amt) {
             amt = pic3Amt + 2;
         }
-        picLeft += amt;
+        pic3Left += amt;
         pic3Amt = amt;
         document.getElementById("pic3").style.left = pic3Left.toString() + "px";
-        document.getElementById("pic3").style.right = (document.getElementById("pic3").style.right - amt).toString() + "px";
+        document.getElementById("pic3").style.right = (document.getElementById("pic3").style.right, amt).toString() + rand + "px";
 
 
 
@@ -123,13 +124,13 @@ function MovePics() {
         var winner = Math.max(pic1Left, pic2Left, pic3Left);
 
         if (pic1Left == winner) {
-            document.getElementById("message").innerText = "John Snow Wins!";
+            document.getElementById("message").innerText = "John Snow Wins! Click here and Go to Restart Race!";
 
         } else if (pic2Left == winner) {
-            document.getElementById("message").innerText = "Daenerys Wins!";
+            document.getElementById("message").innerText = "Daenerys Wins! Click here and Go to Restart Race!";
 
         } else if (pic3Left == winner) {
-            document.getElementById("message").innerText = "Cersei Wins!";
+            document.getElementById("message").innerText = "Cersei Wins! Click here and Go to Restart Race!";
 
 
         }

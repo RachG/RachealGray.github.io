@@ -1,6 +1,5 @@
     .lay {
         position: fixed;
-        background-image: url("https://www.flickeringmyth.com/wp-content/uploads/2017/05/game-of-thrones-the-iron-throne.jpg");
         -webkit-animation: 300s scroll infinite linear;
         -moz-animation: 300s scroll infinite linear;
         -o-animation: 300s scroll infinite linear;
@@ -14,7 +13,6 @@
     
     .lay2 {
         position: fixed;
-        background-color: black;
         -webkit-animation: 275s scroll infinite linear;
         -moz-animation: 275s scroll infinite linear;
         -o-animation: 275s scroll infinite linear;
@@ -28,7 +26,6 @@
     
     .lay3 {
         position: fixed;
-        background-color: black;
         -webkit-animation: 250s scroll infinite linear;
         -moz-animation: 250s scroll infinite linear;
         -o-animation: 250s scroll infinite linear;
@@ -62,10 +59,10 @@
         background-image: none;
         border: none;
         font-family: none;
-        font-size: large;
+        font-size: XX-large;
         text-align: center;
         align-content: center;
-        color: whitesmoke;
+        color: #0000cc;
         padding: 10px;
         position: fixed;
         margin-left: 34%;
@@ -84,7 +81,7 @@
         font-size: large;
         text-align: center;
         align-content: center;
-        color: whitesmoke;
+        color: black bold;
         padding: 10px;
         position: fixed;
         width: 40%;
@@ -106,6 +103,7 @@
     }
     
     .backgrounds {
+        background-size: 100px 100px;
         position: absolute;
         -webkit-transition: all .5s linear;
         -moz-transition: all .5s linear;
@@ -140,4 +138,30 @@
     html {
         max-width: 100%;
         overflow: hidden;
+    }
+    
+    .alert {
+        text-align: center;
+        padding: 20px;
+        background-color: #f44336;
+        /* Red */
+        color: white;
+        margin-bottom: 15px;
+    }
+    /* The close button */
+    
+    .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 30px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    /* When moving the mouse over the close button */
+    
+    .closebtn:hover {
+        color: black;
     }
