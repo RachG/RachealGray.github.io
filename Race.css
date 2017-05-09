@@ -40,6 +40,24 @@
     z-index: -1;
 }
 
+@-moz-keyframes scroll {
+    100% {
+        background-position: -3000px 0px;
+    }
+}
+
+@-o-keyframes scroll {
+    100% {
+        background-position: -3000px 0px;
+    }
+}
+
+@keyframes scroll {
+    100% {
+        background-position: -3000px 0px;
+    }
+}
+
 .message {
     background-image: none;
     border: none;
@@ -85,14 +103,6 @@
     z-index: 5;
     margin-top: 3%;
     overflow: hidden;
-}
-
-.backgrounds {
-    position: absolute;
-    -webkit-transition: all .5s linear;
-    -moz-transition: all .5s linear;
-    -o-transition: all .5s linear;
-    transition: all .5s linear;
 }
 
 .greenLight {

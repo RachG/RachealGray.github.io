@@ -7,18 +7,18 @@ var pic1Amt = 0;
 var pic2Amt = 0;
 var pic3Amt = 0;
 var rand = 0;
-var speed = window.innerWidth / 40;
+var speed = window.innerWidth / 20;
 var finish = window.innerWidth - 100;
-var accel = 10;
-var buffer = 0;
-var pic = document.getElementsByClassName("pic");
+var accel = 25;
+var buffer = 2;
+var pics = document.getElementsByClassName("pic");
 var picImgs = document.getElementsByClassName("picImg");
 
 function DynamicSizes() {
     var picDim = window.innerHeight * .13;
-    for (i = 0; i < pic.length; i++) {
-        pic[i].style.width = picDim.toString() + "px";
-        pic[i].style.height = picDim.toString() + "px";
+    for (i = 0; i < pics.length; i++) {
+        pics[i].style.width = picDim.toString() + "px";
+        pics[i].style.height = picDim.toString() + "px";
         picImgs[i].style.width = picDim.toString() + "px";
         picImgs[i].style.height = picDim.toString() + "px";
     }
@@ -26,7 +26,7 @@ function DynamicSizes() {
 
 function GameStarted() {
     if (!running && reset) {
-        speed = window.innerWidth / 50;
+        speed = window.innerWidth / 20;
         finish = window.innerWidth - 100;
 
         pic1Left = 0;
@@ -57,33 +57,9 @@ function Reset() {
         reset = true;
 
         for (i = 0; i < pic.length; i++) {
-            pic[i].style.left = "0%";
+            pics[i].style.left = "0%";
         }
-        document.getElementById("pic1").classList.remove("back");
-        document.getElementById("pic2").classList.remove("back");
-        document.getElementById("pic3").classList.remove("back");
 
-
-
-
-
-        back1left = 0;
-        back2left = 0;
-        back3left = 0;
-
-        back1mult = 30;
-        back2mult = 42;
-        back3mult = 54;
-
-        back1wid = window.innerWidth + 100;
-        back2wid = window.innerWidth + 100;
-        back3wid = window.innerWidth + 100;
-
-        interval = 0;
-
-        for (i = 0; i < backgrounds.length; i++) {
-            backgrounds[i].style.left = "0px";
-        }
         document.getElementById("message").style.visibility = "hidden";
     }
 }
@@ -92,7 +68,7 @@ function Reset() {
 function loop() {
     if (running) {
         setTimeout(function() {
-            MovePic();
+            MovePics();
             speed += accel;
             rand = 500;
             loop();
@@ -100,7 +76,7 @@ function loop() {
     }
 };
 
-function MovePic() {
+function MovePics() {
 
     if (pic1Left < finish && pic2Left < finish && pic3Left < finish) {
         var amt = Math.round(Math.random() * speed + buffer);
@@ -150,10 +126,10 @@ function MovePic() {
             document.getElementById("message").innerText = "John Snow Wins!";
 
         } else if (pic2Left == winner) {
-            document.getElementById("message").innerText = "  Daenerys Wins! Click here to Restart";
+            document.getElementById("message").innerText = "Daenerys Wins!";
 
         } else if (pic3Left == winner) {
-            document.getElementById("message").innerText = "Cersei Wins! Click here to Restart";
+            document.getElementById("message").innerText = "Cersei Wins!";
 
 
         }
